@@ -9,6 +9,14 @@ today = datetime.today()
 default_start_date = today.replace(day=1)
 default_end_date = today + timedelta(days=1)
 
+
+# Set the page configuration
+st.set_page_config(
+    page_title="Analysis",
+    page_icon="🔍",
+    layout="wide",  # Set the layout to wide
+)
+
 def ta_analysis_DB():
 
 
