@@ -6,6 +6,14 @@ import matplotlib
 import pandas as pd
 matplotlib.use('Agg')
 
+
+st.set_page_config(
+    page_title="Backtesting",
+    page_icon="📈",
+    layout="wide",  # Set the layout to wide
+)
+
+
 def get_forex_data(base_currency, quote_currency, start_date, end_date, interval):
     ticker_symbol = f'{base_currency}{quote_currency}=X'
     forex_data = yf.download(ticker_symbol, start=start_date, end=end_date, interval=interval)
