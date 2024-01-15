@@ -40,7 +40,6 @@ def ta_analysis_DB():
                 io_decoder = {'Daily': '1d', 'Weekly': '1wk', 'Monthly': '1mo', 'Hourly': '1h'}
                 interval = st.selectbox('Select Interval', interval_options, index=0)
                 interval = io_decoder[interval]
-                st.write(interval)
 
             if 'sma_windows' not in st.session_state:
                 st.session_state.sma_windows = []
