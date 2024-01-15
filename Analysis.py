@@ -344,7 +344,23 @@ def ta_analysis_DB():
             st.plotly_chart(fig_cci, use_container_width=True)
 
     with tabb:
-        st.dataframe(forex_data.T[:-1].T)
+
+        df = forex_data
+        def convert_df(df):
+            return df.to_csv(index=False).encode('utf-8')
+
+        csv = convert_df(df)
+
+        st.download_button(
+            "Download Data",
+            csv,
+            f"{interval}_{currencypair1}{currencypair2}.csv",
+            "text/csv",
+            key='download-csv'
+        )
+
+
+        st.table(forex_data.T[:-1].T)
 
 
 
