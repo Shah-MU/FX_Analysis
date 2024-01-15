@@ -34,7 +34,7 @@ end_date = st.sidebar.date_input("End Date", pd.to_datetime("2024-01-01"))
 
 
 # Interval selection
-interval_options = ['Daily', 'Weekly', 'Monthly', 'Hourly'][::-1]
+interval_options = ['Daily', 'Weekly', 'Monthly', 'Hourly']
 io_decoder = {'Daily': '1d', 'Weekly': '1wk', 'Monthly': '1mo', 'Hourly': '1h'}
 selected_interval = st.sidebar.selectbox('Select Interval', interval_options, index=0)
 interval = io_decoder[selected_interval]
@@ -158,8 +158,8 @@ with st.expander("Example Strategy (Mean Reversion Bollinger Bands)"):
 
 
 
-balMax = st.sidebar.number_input('Enter You Maximum Balance',10000)
-balance = st.sidebar.slider("Select Desired Balance",1, balMax)
+balMax = st.sidebar.number_input('Enter You Maximum Balance',value=1000)
+balance = st.sidebar.slider("Select Desired Balance", min_value=1, max_value=balMax, value=int(balMax/2))
 
 
 def backtest():
