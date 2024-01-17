@@ -301,7 +301,7 @@ def ta_analysis_DB():
 
                                                  name='Parabolic SAR'))
 
-        st.title("TA Analysis Dashboard")
+        st.title("TA Analysis Dashboard_")
 
         if not (st.checkbox('**View Full Graph**')):
 
