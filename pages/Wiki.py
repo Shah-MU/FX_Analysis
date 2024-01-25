@@ -23,7 +23,9 @@ st.set_page_config(
 tab2, tab1 = st.tabs(['Q&A','Show Wiki'])
 
 with tab2:
-    st.write('temp')
+    st.write('')
+
+QA.qa_agent()
     
 
 
@@ -181,4 +183,4 @@ with tab1:
         """
     )
 
-QA.qa_agent()
+
