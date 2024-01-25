@@ -63,7 +63,7 @@ def qa_agent():
 
     # Set up the Langchain LLM
     openai.api_type = "open_ai"
-    openai.api_base = LLM
+    openai.api_base = st.secrets["LLM"]
     openai.api_key = "NULL"
 
     # Upload the PDF file
@@ -87,7 +87,7 @@ def qa_agent():
 
         # Create embeddings using LocalAIEmbeddings
         embeddings = LocalAIEmbeddings(
-            openai_api_base=EMB, model="text-embedding-ada-002", openai_api_key="NULL"
+            openai_api_base=st.secrets["EMB"], model="text-embedding-ada-002", openai_api_key="NULL"
         )
 
         # Build the knowledge base using FAISS
