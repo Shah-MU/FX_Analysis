@@ -103,10 +103,18 @@ with tab1:
         7. **Support and Resistance Indicators:**
            - **Pivot Points:** Enable pivot points for support and resistance analysis.
            
-        8. **Example:**
+        8. **Example**
+           - Example case for Moving Averages and Bollinger Bands 
 
         """
     )
+
+    try:
+        st.image('https://media2.giphy.com/media/aSYDBxWrcysgR5cfLj/giphy.gif')
+        
+    except: pass
+
+    
 
 
     st.markdown(
