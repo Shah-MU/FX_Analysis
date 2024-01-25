@@ -1,5 +1,8 @@
 # Forex Analysis and Backtesting Dashboard
 
+See the app live here!
+https://shah-mu-fxanalysis.streamlit.app/
+
 This repository contains a Streamlit-based dashboard for analyzing forex data and backtesting trading strategies. It includes three main scripts:
 
 1. **Analysis.py**: A script for analyzing forex data, including technical analysis and visualization of various indicators.
