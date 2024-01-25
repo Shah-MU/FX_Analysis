@@ -1,7 +1,6 @@
 langchain==0.0.316
 openai==0.28.1
 chromadb==0.4.15
-streamlit==1.29.0
 backtrader==1.9.78.123
 yfinance==0.2.33
 streamlit-ace==0.1.1
