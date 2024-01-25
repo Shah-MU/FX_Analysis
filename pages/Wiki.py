@@ -26,7 +26,7 @@ with tab2:
     st.markdown('## AI Chatbot Q&A Agent')
     st.markdown('*Will answer general questions about the project')
 
-QA.qa_agent()
+
 
 with tab1:
     st.markdown(
@@ -180,3 +180,5 @@ with tab1:
 
         """
     )
+
+QA.qa_agent()
