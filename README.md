@@ -6,7 +6,7 @@ This repository contains a Streamlit-based dashboard for analyzing forex data an
 
 2. **Backtesting.py**: A script for backtesting trading strategies using the backtrader library.
 
-3. **QA.py**: A script that incorporates a chatbot to answer questions related to the project using OpenAI's language model.
+3. **QA.py**: A script that incorporates a chatbot to answer questions related to the project using a local install of Llama2.
 
 ## Requirements
 
