@@ -1,3 +1,6 @@
+About the Project:
+This Streamlit-based web application facilitates the backtesting of Forex trading strategies using the backtrader library. Users can input custom strategy code or choose from provided examples such as Moving Average Crossover, RSI, and Mean Reversion Bollinger Bands. The application fetches Forex data via yfinance, allows parameter configuration through a sidebar, and enables interactive backtesting with visual results. Strategy code execution is controlled via checkboxes, ensuring user safety. Additionally, the project includes an analysis section where users can input, execute, and visualize technical analysis indicators, enhancing the tool's capabilities for refining and evaluating Forex trading strategies. Caution is advised when executing arbitrary code, and the application serves as a user-friendly interface for comprehensive strategy testing and analysis.
+
 Foreign exchange, often abbreviated as forex or FX, refers to the global marketplace where currencies are bought and sold. The forex market is the largest and most liquid financial market in the world, facilitating the exchange of currencies between participants, including governments, financial institutions, corporations, and individual traders.
 Here are some key aspects to understand about foreign exchange:
 1.	Currency Pairs:
