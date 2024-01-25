@@ -84,7 +84,7 @@ def qa_agent():
 
         # Create embeddings using LocalAIEmbeddings
         embeddings = LocalAIEmbeddings(
-            openai_api_base="http://http://144.172.137.100:8080", model="text-embedding-ada-002", openai_api_key="NULL"
+            openai_api_base="http://144.172.137.100:8080", model="text-embedding-ada-002", openai_api_key="NULL"
         )
 
         # Build the knowledge base using FAISS
