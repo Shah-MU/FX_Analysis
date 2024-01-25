@@ -78,6 +78,7 @@ The "Graph" feature in the provided Streamlit application is a visual representa
 •	The main graph is generated using the Plotly library (plotly.graph_objects). It displays a candlestick chart of the historical forex data, including open, high, low, and close prices.
 3. Technical Analysis Indicators:
 •	Users can customize the technical analysis indicators displayed on the graph through the sidebar input parameters. These parameters include currency pair selection, start and end dates, data interval (daily, weekly, monthly, or hourly), and various technical indicators such as moving averages, ADX, RSI, Stochastic Oscillator, Bollinger Bands, MACD, CCI, Pivot Points, and Parabolic SAR.
+
 4. User-Defined Input Parameters:
 •	Users can input their preferred currency pair (e.g., EUR/USD), start and end dates for the historical data, and choose the data interval (daily, weekly, monthly, or hourly). Additionally, users can select and customize various technical indicators and their parameters through the Streamlit interface.
 5. Dynamic Updating:
@@ -390,4 +391,40 @@ figure = cerebro.plot()[0][0]
 st.pyplot(figure)
 •	Displaying backtest results such as starting and ending portfolio values.
 •	Plotting the backtest results using Matplotlib and displaying the plot in the Streamlit app.
+
+
+About the Developer:
+The application was meticulously developed by Shah Sahat Murshed, a dedicated third-year computer engineering student at Concordia University in Montreal. This project served as an opportunity for Shah to enhance his proficiency in handling real-time data and delve into the intriguing realm of Natural Language Processing (NLP) concepts.
+
+About The Chatbot (You):
+This code defines a Streamlit web application that serves as a chatbot using the Langchain library. The chatbot is designed to answer questions related to a project by leveraging a local language model (LLM) and other language processing components.
+Here's a breakdown of the code's functionality:
+1.	Importing Libraries:
+o	The code imports necessary libraries such as time, streamlit, and various modules from the langchain library.
+2.	Setting Up the Chat Interface:
+o	Initializes a Streamlit chat interface with a welcome message.
+3.	Conversation Management:
+o	Defines functions for downloading and uploading conversation sessions in JSON format. Users can save and load previous chat sessions.
+4.	Sidebars:
+o	Creates two tabs in the sidebar: one for providing information about the chatbot and another for managing conversation sessions.
+5.	Setting up Langchain LLM:
+o	Configures the Langchain LLM by specifying the API type, base URL, and API key.
+6.	Uploading Text File:
+o	Checks for a valid path to a text file, reads its content, and splits the text into chunks using the CharacterTextSplitter from Langchain.
+7.	Creating Embeddings and Knowledge Base:
+o	Uses LocalAIEmbeddings to create embeddings for the text and builds a knowledge base using FAISS indexing.
+8.	Displaying User and Assistant Messages:
+o	Displays user and assistant messages from previous conversations, allowing users to delete individual messages.
+9.	User Input Handling:
+o	Takes user input using st.chat_input and performs similarity search on the knowledge base.
+o	Initializes the Langchain LLM and a question-answering chain.
+o	Runs the chain to generate a response based on the user's question.
+10.	Streaming Assistant's Response:
+•	Displays the assistant's response in the chat interface, streaming the text with a delay to simulate typing.
+11.	Updating Conversation History:
+•	Updates the conversation history with the user's input and the assistant's response.
+In summary, this code creates a chatbot interface that interacts with a local language model and other language processing components to provide answers to user queries related to a project. The chat history can be saved and loaded for future reference.
+If you are interested in an untrained model feel free to check another one of Shah’s projects:
+Here: LINK TO CHATBOT: https://shah-mu-chatbot.streamlit.app
+
 
