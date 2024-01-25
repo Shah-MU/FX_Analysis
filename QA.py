@@ -1,6 +1,6 @@
 import time
 import streamlit as st
-from PyPDF2 import PdfReader
+import PyPDF2
 from langchain.text_splitter import CharacterTextSplitter
 from langchain_community.embeddings import LocalAIEmbeddings
 from langchain.vectorstores import FAISS
@@ -71,7 +71,7 @@ def qa_agent():
         st.markdown('#')
         st.error('''Please enter a PDF file to continue''')
     else:
-        pdf_reader = PdfReader(pdf)
+        pdf_reader = PyPDF2.PdfReader(pdf)
         text = ""
         for page in pdf_reader.pages:
             text += page.extract_text()
