@@ -1,6 +1,6 @@
 import time
 import streamlit as st
-import fitz
+from docx import Document
 from langchain.text_splitter import CharacterTextSplitter
 from langchain_community.embeddings import LocalAIEmbeddings
 from langchain.vectorstores import FAISS
@@ -64,19 +64,18 @@ def qa_agent():
     openai.api_base = 'http://144.172.137.100:1234/v1'
     openai.api_key = "NULL"
 
-    # Upload the PDF file
-    pdf = 'TA_DB.pdf'
+    # Upload the Word document
+    docx_file = 'TA_dv.docx'
 
-    if pdf is None:
+    if docx_file is None:
         st.markdown('#')
-        st.error('''Please enter a PDF file to continue''')
+        st.error('''Please enter a Word document to continue''')
     else:
-        pdf_document = fitz.open(pdf)
+        # Read text from Word document
+        doc = Document(docx_file)
         text = ""
-
-        for page_num in range(pdf_document.page_count):
-            page = pdf_document[page_num]
-            text += page.get_text()
+        for paragraph in doc.paragraphs:
+            text += paragraph.text + "\n"
 
         # Split the text into chunks
         text_splitter = CharacterTextSplitter(
@@ -85,7 +84,6 @@ def qa_agent():
             chunk_overlap=200,
             length_function=len
         )
-
         chunks = text_splitter.split_text(text)
 
         # Create embeddings using LocalAIEmbeddings
