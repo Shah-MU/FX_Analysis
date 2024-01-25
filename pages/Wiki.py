@@ -123,29 +123,25 @@ with tab1:
     
     4. **Langchain LLM Configuration:**
     
-    - The Langchain LLM (Language Model) is configured to operate with OpenAI. The API base is set to 'http://144.172.137.100:1234/v1', and the API key is set to "NULL."
+    - The Langchain LLM (Language Model) is configured to operate with OpenAI. The API base is set to the developers local machine to continue.
     
-    5. **Text File Upload:**
-    
-    - To enhance the chat bot's knowledge, a text file named 'TA_DB.txt' is utilized. Make sure to provide a valid path to a text file for the tool to continue.
-    
-    6. **Text Processing:**
+    5. **Text Processing:**
     
     - The tool processes the text from the specified file, splitting it into chunks for efficient handling. The LocalAIEmbeddings model is used for creating embeddings.
     
-    7. **Knowledge Base Building:**
+    6. **Knowledge Base Building:**
     
     - The FAISS (Facebook AI Similarity Search) is employed to build a knowledge base using the generated embeddings. This knowledge base assists the chat bot in providing relevant responses.
     
-    8. **User-Chat Interaction:**
+    7. **User-Chat Interaction:**
     
     - User and assistant messages are displayed, allowing you to see the ongoing conversation. Each message can be deleted individually by clicking the "Delete Message" button.
     
-    9. **User Input and Chat Bot Response:**
+    8. **User Input and Chat Bot Response:**
     
     - The chat bot prompts the user with "What is up?" and awaits a response. Upon receiving the user's input, the chat bot processes the question, performs a similarity search, and utilizes the Langchain QA chain to formulate a response.
     
-    10. **Assistant's Response Display:**
+    9. **Assistant's Response Display:**
     
     - The assistant's response is displayed with a typewriter effect, enhancing the user experience. The conversation is updated, and you can continue interacting with the chat bot.
     
