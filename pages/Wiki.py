@@ -23,8 +23,8 @@ st.set_page_config(
 tab2, tab1 = st.tabs(['Q&A','Show Wiki'])
 
 with tab2:
-    st.markdown('## AI Chatbot Q&A Agent')
-    st.markdown('*Will answer general questions about the project')
+    st.write('temp')
+    
 
 
 
