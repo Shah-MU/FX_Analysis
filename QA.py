@@ -98,7 +98,7 @@ def qa_agent():
                 with st.chat_message(message["role"]):
                     st.markdown(message["content"])
                     # Add a button to delete the last message
-                    if st.button(f"Delete Message", key=f"delete_{message['role']}_{idx}"):
+                    if st.button(f"🗑️", key=f"delete_{message['role']}_{idx}"):
                         st.session_state.messages.pop(idx)
                         st.rerun()
 
