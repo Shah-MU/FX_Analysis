@@ -1,6 +1,6 @@
 import time
 import streamlit as st
-import PyPDF2
+import fitz
 from langchain.text_splitter import CharacterTextSplitter
 from langchain_community.embeddings import LocalAIEmbeddings
 from langchain.vectorstores import FAISS
@@ -71,10 +71,12 @@ def qa_agent():
         st.markdown('#')
         st.error('''Please enter a PDF file to continue''')
     else:
-        pdf_reader = PyPDF2.PdfReader(pdf)
+        pdf_document = fitz.open(pdf)
         text = ""
-        for page in pdf_reader.pages:
-            text += page.extract_text()
+
+        for page_num in range(pdf_document.page_count):
+            page = pdf_document[page_num]
+            text += page.get_text()
 
         # Split the text into chunks
         text_splitter = CharacterTextSplitter(
@@ -83,6 +85,7 @@ def qa_agent():
             chunk_overlap=200,
             length_function=len
         )
+
         chunks = text_splitter.split_text(text)
 
         # Create embeddings using LocalAIEmbeddings
