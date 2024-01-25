@@ -109,35 +109,35 @@ with tab1:
     
     1. **Chat Bot Introduction:**
     
-    - To initiate interaction with the chat bot, click the "Assistant" section. The bot is designed to answer questions and provide insights about the project.
+        - To initiate interaction with the chat bot, click the "Assistant" section. The bot is designed to answer questions and provide insights about the project.
     
      2. **Conversation Management:**
     
-    - In the "Save Conversation" tab, you can download and upload conversation sessions. This feature enables you to revisit and continue conversations at a later time or to share conversations with other people.
+        - In the "Save Conversation" tab, you can download and upload conversation sessions. This feature enables you to revisit and continue conversations at a later time or to share conversations with other people.
     
     3. **Local Deployment:**
     
-    -  Both the embedding model and the LLM (Language Model) are hosted locally, this was done to maximize control over the model as well as to familiarize myself with AI development methodology.
+        -  Both the embedding model and the LLM (Language Model) are hosted locally, this was done to maximize control over the model as well as to familiarize myself with AI development methodology.
     
     4. **Langchain LLM Configuration:**
     
-    - The Langchain LLM (Language Model) is configured to operate with OpenAI. The API base is set to my local machine.
+        - The Langchain LLM (Language Model) is configured to operate with OpenAI. The API base is set to my local machine.
     
     5. **Text Processing:**
     
-    - The tool processes the text from the specified file, splitting it into chunks for efficient handling. The LocalAIEmbeddings model is used for creating embeddings.
+        - The tool processes the text from the specified file, splitting it into chunks for efficient handling. The LocalAIEmbeddings model is used for creating embeddings.
     
     6. **Knowledge Base Building:**
     
-    - The FAISS (Facebook AI Similarity Search) is employed to build a knowledge base using the generated embeddings. This knowledge base assists the chat bot in providing relevant responses.
+        - The FAISS (Facebook AI Similarity Search) is employed to build a knowledge base using the generated embeddings. This knowledge base assists the chat bot in providing relevant responses.
     
     7. **User-Chat Interaction:**
     
-    - User and assistant messages are displayed, allowing you to see the ongoing conversation. Each message can be deleted individually by clicking the "Delete Message" button.
+        - User and assistant messages are displayed, allowing you to see the ongoing conversation. Each message can be deleted individually by clicking the "Delete Message" button.
     
     8. **User Input and Chat Bot Response:**
     
-    - The chat bot prompts the user to ask it questions and awaits a response. Upon receiving the user's input, the chat bot processes the question, performs a similarity search, and utilizes the Langchain QA chain to formulate a response.
+        - The chat bot prompts the user to ask it questions and awaits a response. Upon receiving the user's input, the chat bot processes the question, performs a similarity search, and utilizes the Langchain QA chain to formulate a response.
     
     
     Feel free to explore the capabilities of the chat bot and leverage it for additional insights into the Technical Analysis and Backtesting Dashboard!
