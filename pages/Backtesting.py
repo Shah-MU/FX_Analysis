@@ -201,4 +201,7 @@ def backtest():
         main()
 
 if st.button('Backtest'):
-    backtest()
+    try:
+        backtest()
+    except:
+        st.info('Visualization library initialized, click button to see graph')
