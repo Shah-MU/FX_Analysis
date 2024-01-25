@@ -1,6 +1,6 @@
 # Forex Analysis and Backtesting Dashboard
 
-See the app live here!
+**See the app live here!**
 https://shah-mu-fxanalysis.streamlit.app/Wiki
 
 This repository contains a Streamlit-based dashboard for analyzing forex data and backtesting trading strategies. It includes three main scripts:
