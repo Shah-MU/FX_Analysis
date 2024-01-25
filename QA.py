@@ -1,6 +1,5 @@
 import time
 import streamlit as st
-from docx import Document
 from langchain.text_splitter import CharacterTextSplitter
 from langchain_community.embeddings import LocalAIEmbeddings
 from langchain.vectorstores import FAISS
@@ -64,18 +63,15 @@ def qa_agent():
     openai.api_base = 'http://144.172.137.100:1234/v1'
     openai.api_key = "NULL"
 
-    # Upload the Word document
-    docx_file = 'TA_dv.docx'
+    # Upload the PDF file
+    text_file_path = 'TA_DB.txt'  # Replace 'your_text_file.txt' with the actual path to your text file
 
-    if docx_file is None:
+    if text_file_path is None or not os.path.exists(text_file_path):
         st.markdown('#')
-        st.error('''Please enter a Word document to continue''')
+        st.error('''Please enter a valid path to a text file to continue''')
     else:
-        # Read text from Word document
-        doc = Document(docx_file)
-        text = ""
-        for paragraph in doc.paragraphs:
-            text += paragraph.text + "\n"
+        with open(text_file_path, 'r', encoding='utf-8') as file:
+            text = file.read()
 
         # Split the text into chunks
         text_splitter = CharacterTextSplitter(
