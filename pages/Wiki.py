@@ -105,7 +105,7 @@ with tab1:
         """
        ## Page 3: Chat Bot Integration
 
-    Welcome to the Chat Bot Integration page! This section seamlessly integrates a chat bot into the Technical Analysis and Backtesting Dashboard, enhancing your interactive experience. The chat bot has been trained on the project's wiki, providing information and assistance related to the tool. Here's a breakdown of the functionalities:
+    Welcome to the Chat Bot Integration page! This section seamlessly integrates a chat bot into the Technical Analysis and Backtesting Dashboard, enhancing your interactive experience. The chat bot has been fine-tuned on the project's wiki, providing information and assistance related to the tool. Here's a breakdown of the functionalities:
     
     1. **Chat Bot Introduction:**
     
@@ -113,17 +113,15 @@ with tab1:
     
      2. **Conversation Management:**
     
-    - Use the "Note" tab to understand more about the chat bot. It has been trained on the project's wiki, and conversations can be saved in JSON format using the alternate tab.
-      
-    - In the "Save Conversation" tab, you can download and upload conversation sessions. This feature enables you to revisit and continue conversations at a later time.
+    - In the "Save Conversation" tab, you can download and upload conversation sessions. This feature enables you to revisit and continue conversations at a later time or to share conversations with other people.
     
     3. **Local Deployment:**
     
-    - The chat bot operates locally, ensuring a smooth and responsive experience. Both the embedding model and the LLM (Language Model) are hosted locally, minimizing performance issues related to traffic and question complexity.
+    -  Both the embedding model and the LLM (Language Model) are hosted locally, this was done to maximize control over the model as well as to familiarize myself with AI development methodology.
     
     4. **Langchain LLM Configuration:**
     
-    - The Langchain LLM (Language Model) is configured to operate with OpenAI. The API base is set to the developers local machine to continue.
+    - The Langchain LLM (Language Model) is configured to operate with OpenAI. The API base is set to my local machine.
     
     5. **Text Processing:**
     
@@ -139,11 +137,8 @@ with tab1:
     
     8. **User Input and Chat Bot Response:**
     
-    - The chat bot prompts the user with "What is up?" and awaits a response. Upon receiving the user's input, the chat bot processes the question, performs a similarity search, and utilizes the Langchain QA chain to formulate a response.
+    - The chat bot prompts the user to ask it questions and awaits a response. Upon receiving the user's input, the chat bot processes the question, performs a similarity search, and utilizes the Langchain QA chain to formulate a response.
     
-    9. **Assistant's Response Display:**
-    
-    - The assistant's response is displayed with a typewriter effect, enhancing the user experience. The conversation is updated, and you can continue interacting with the chat bot.
     
     Feel free to explore the capabilities of the chat bot and leverage it for additional insights into the Technical Analysis and Backtesting Dashboard!
 
