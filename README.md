@@ -20,7 +20,7 @@ Additional Notes
 
     Modify the input parameters in each script according to your requirements.
     Ensure that you have the necessary data files or APIs set up for fetching forex data.
-##Analysis.py
+## Analysis.py
 
 ```py
 import yfinance as yf
