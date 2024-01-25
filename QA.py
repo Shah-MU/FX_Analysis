@@ -47,9 +47,12 @@ def qa_agent():
     tab1, tab2= st.sidebar.tabs(['Note', 'Save Conversation'])
 
     with tab1:
-        st.markdown('''This is chat bot has been trained on this projects wiki.
+        st.markdown('''This is a chat bot has been fine-tuned on this projects wiki.
         Both the embedding model and the LLM are hosted locally, as
-        such performance issues may occur due to traffic and question complexity  
+        such performance issues may occur due to traffic and question complexity, please allow 1-2 minutes
+        for a generated response
+
+        \nIf you wish to interact with the standalone version of this chatbot which has not been pretrained click on the link [here!](https://shah-mu-chatbot.streamlit.app/)
         
         \nConversations in JSON format using the alternate tab
         ''')
