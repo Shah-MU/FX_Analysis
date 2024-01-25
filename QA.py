@@ -104,7 +104,7 @@ def qa_agent():
                         st.rerun()
 
         # React to user input
-        if user_question := st.chat_input("What is up?"):
+        if user_question := st.chat_input("Enter To Start Chatting!"):
             st.chat_message("user").markdown(user_question)
             st.session_state.messages.append({"role": "user", "content": user_question})
 
