@@ -12,9 +12,6 @@ from datetime import datetime
 import os
 
 def qa_agent():
-
-    st.markdown("## AI Q&A Agent")
-    st.markdown("*Will answer contextual questions about the project*")
     
     with st.chat_message("Assistant"):
         st.write("Hello feel free to ask me anything about this project!")
