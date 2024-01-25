@@ -394,10 +394,11 @@ st.pyplot(figure)
 
 
 About the Developer:
-The application was meticulously developed by Shah Sahat Murshed, a dedicated third-year computer engineering student at Concordia University in Montreal. This project served as an opportunity for Shah to enhance his proficiency in handling real-time data and delve into the intriguing realm of Natural Language Processing (NLP) concepts.
+The application was meticulously developed by Shah Sahat Murshed, a dedicated third-year computer engineering student at Concordia University in Montreal. This project served as an opportunity for Shah to enhance his proficiency in handling real-time data and delve into the intriguing realm of Natural Language Processing (NLP) concepts, if you have any more questions regarding development feel free to reach out to Shah: **shah.murshed@mail.concordia.ca**
 
 About The Chatbot (You):
 This code defines a Streamlit web application that serves as a chatbot using the Langchain library. The chatbot is designed to answer questions related to a project by leveraging a local language model (LLM) and other language processing components.
+The chatbot was fine-tuned using the GitHub codebase and an extended version of the wiki you see on the top tab, if you have any more questions regarding development feel free to reach out to Shah: **shah.murshed@mail.concordia.ca**
 Here's a breakdown of the code's functionality:
 1.	Importing Libraries:
 o	The code imports necessary libraries such as time, streamlit, and various modules from the langchain library.
